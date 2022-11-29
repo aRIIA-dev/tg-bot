@@ -167,15 +167,6 @@ app.message(
 );
 
 app.message(
-	/^(ndr|NDR|Net Dollar Retention|net dollar retention).*/,
-	async ({ message, say }) => {
-		await say(
-			`Hi <@${message.user}>:\n\nNDR - Net Dollar Retention\n\nNet dollar retention (NDR) is a metric used to measure the amount of revenue a company retains from existing customers. It is calculated by dividing the amount of revenue retained by the amount of revenue lost.`
-		);
-	}
-);
-
-app.message(
 	/^(ltv|LTV|Lifetime Value|lifetime value).*/,
 	async ({ message, say }) => {
 		await say(
