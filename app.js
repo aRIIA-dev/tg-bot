@@ -14,9 +14,6 @@ const app = new App({
 });
 
 // & Messages
-app.message('hello', async ({ message, say }) => {
-	await say(`Hey there <@${message.user}>!`);
-});
 
 app.message(':wave:', async ({ message, say }) => {
 	await say(`Hi <@${message.user}>`);
